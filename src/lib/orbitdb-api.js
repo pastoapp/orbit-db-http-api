@@ -11,7 +11,6 @@ class OrbitdbAPI {
         let comparisons, rawiterator, getraw, unpack_contents, listener;
         let dbMiddleware, addEventListener;
 
-        console.log(server_opts)
         listener = (server_opts.http1 ? Http : Http2)[
             server_opts.secure ? 'createSecureServer' : 'createServer'
         ](server_opts.http2_opts);
